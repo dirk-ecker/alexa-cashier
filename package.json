@@ -1,0 +1,22 @@
+{
+  "name": "alexa-cashier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "alexa",
+    "cashier"
+  ],
+  "author": "Dirk Ecker",
+  "license": "MIT",
+  "devDependencies_": {
+    "chai": "^3.5.0",
+    "mocha": "^3.4.1"
+  },
+  "dependencies": {
+    "alexa-sdk": "^1.0.6"
+  }
+}
