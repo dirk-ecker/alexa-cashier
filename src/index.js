@@ -113,7 +113,7 @@ const handleNoNumber = instance => {
   const value = instance.event.request.intent.slots.numberValue.value
   let message
   if (isNaN(value)) {
-    message = `${rawValue} ist keine Zahl. Versuche es nocheinmal.`
+    message = `Ich habe die Zahl nicht erkannt, versuche es nocheinmal.`
   }
   return {value, message}
 }
