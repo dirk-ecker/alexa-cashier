@@ -17,6 +17,7 @@
     "mocha": "^3.4.1"
   },
   "dependencies": {
-    "alexa-sdk": "^1.0.6"
+    "ask-sdk": "^2.0.5",
+    "npm": "^6.0.1"
   }
 }
