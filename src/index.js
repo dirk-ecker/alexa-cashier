@@ -29,7 +29,7 @@ let result = 0;
 const handlers = {
   'LaunchRequest': function () {
     const introMessage = this.t('INTRO_MESSAGE');
-    this.response.speak(introMessage).listen('');
+    this.response.speak(introMessage).listen('Los gehts.');
     result = 0;
     this.emit(':responseReady');
   },
@@ -41,7 +41,7 @@ const handlers = {
       result /= value;
       handeled.message = 'durch ' + value + ' ergibt ' + result;
     }
-    this.response.speak(handeled.message).listen('');
+    this.response.speak(handeled.message).listen('Und weiter.');
     this.emit(':responseReady');
   },
 
@@ -52,7 +52,7 @@ const handlers = {
       result *= value;
       handeled.message = 'mal ' + value + ' ergibt ' + result;
     }
-    this.response.speak(handeled.message).listen('');
+    this.response.speak(handeled.message).listen('Und weiter.');
     this.emit(':responseReady');
   },
 
@@ -63,7 +63,7 @@ const handlers = {
       result += value;
       handeled.message = 'plus ' + value + ' ergibt ' + result;
     }
-    this.response.speak(handeled.message).listen('');
+    this.response.speak(handeled.message).listen('Und weiter.');
     this.emit(':responseReady');
   },
 
@@ -74,19 +74,19 @@ const handlers = {
       result -= value;
       handeled.message = 'minus ' + value + ' ergibt ' + result;
     }
-    this.response.speak(handeled.message).listen('');
+    this.response.speak(handeled.message).listen('Und weiter.');
     this.emit(':responseReady');
   },
 
   'resultIntent': function () {
-    const message = 'Das Ergbnis ist ' + result;
-    this.response.speak(message).listen('');
+    const message = 'Das Ergebnis ist ' + result;
+    this.response.speak(message).listen('Und weiter.');
     this.emit(':responseReady');
   },
 
   'newIntent': function () {
     result = 0;
-    this.response.speak('Okay, fangen wir wieder bei Null an.').listen('');
+    this.response.speak('Okay, fangen wir wieder bei Null an.').listen('Und weiter.');
     this.emit(':responseReady');
   },
 
